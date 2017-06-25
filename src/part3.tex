@@ -1,0 +1,33 @@
+\begin{frame}[fragile]
+    \frametitle{Sample Code}
+    \begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+    #include <cuda_runtime.h>
+
+    float *h_A = (float *) malloc(size);
+    if (h_A == NULL) { ... };
+
+    float *d_A = NULL;
+    err = cudaMalloc((void **) &d_A, size);
+    err = cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+    if (err != cudaSuccess) { ... };
+
+    int threadsPerBlock = 256;
+    int blocksPerGrid = (numElements + threadsPerBlock - 1) / threadsPerBlock;
+
+    vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements);
+
+    err = cudaGetLastError();
+    err = cudaDeviceSynchronize();
+    if (err != cudaSuccess) { ... };
+
+    err = cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
+    err = cudaFree(d_A);
+    if (err != cudaSuccess) { ... };
+    \end{lstlisting}
+
+    \vfill
+
+    \begin{center}
+        \tiny{Fonte: \url{github.com/phrb/intro-cuda} [Accessed in 29/07/16]}
+    \end{center}
+\end{frame}
