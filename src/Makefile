@@ -24,3 +24,4 @@ slides: $(PDF)
 
 clean:
 	@rm -rf "$(TEMP_DIR)"
+	@rm -rf "$(PDF)"
