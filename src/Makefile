@@ -14,7 +14,7 @@ all: sty slides
 $(STY): $(DTX) $(INS)
 	@latex $(INS)
 
-$(PDF): $(STY) $(SRC)
+$(PDF): $(STY) $(SRC) *.tex
 	$(TEXC) $(SRC)
 	@cp $(TEMP_DIR)/$(PDF) .
 
