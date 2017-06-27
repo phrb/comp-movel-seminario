@@ -1,3 +1,5 @@
+\plain{Visão Geral}
+
 \section{Visão Geral do Sistema}
 
 \begin{frame}
@@ -21,7 +23,10 @@
     \end{center}
 \end{frame}
 
-\section{Eliminando o Auto-Bloqueio}
+\plain{Localização 3D}
+\section{Soluções para Localização 3D}
+
+\subsection{Eliminando o Auto-Bloqueio}
 
 \begin{frame}
     \frametitle{Eliminando o Auto-Bloqueio}
@@ -91,7 +96,7 @@
     \end{center}
 \end{frame}
 
-\section{Determinando a Variação de Frequências}
+\subsection{Determinando a Variação de Frequências}
 \begin{frame}
     \frametitle{Determinando a Variação de Frequências: Intuição}
     Problema:
@@ -117,8 +122,8 @@
 
     Solução do artigo:
     \begin{itemize}
-        \item \alert{Emitir simultaneamente um conjunto de frequências}
         \item \alert{Heuristic optimized continuous wave ranging} (HMFCW)
+        \item \alert{Emitir simultaneamente um conjunto de frequências}
     \end{itemize}
 
     \pause
@@ -126,7 +131,7 @@
     \metroset{block=fill}
     \begin{block}{Provam que:}
         Usando uma \alert{combinação de frequências} é possível calcular $\alert{n}$ corretamente,
-        desde que os \alert{erros de medição sejam limitados},
+        desde que os \alert{erros de medição} e a \alert{distância} sejam \alert{limitados},
         e que a \alert{largura de banda seja grande o suficiente}.
     \end{block}
 \end{frame}
@@ -139,23 +144,23 @@
     \end{center}
 \end{frame}
 
-\section{Algoritmo de Localização 3D}
+\subsection{Algoritmo de Localização 3D}
 \begin{frame}
     \frametitle{Algoritmo de Localização 3D}
     Usando apenas \alert{duas antenas}:
 
     \begin{center}
-        \includegraphics[width=.8\textwidth]{single-paraboloid}
+        \includegraphics[width=.8\textwidth]{single-hyperboloid}
     \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Algoritmo de Localização 3D}
     \begin{center}
-        \includegraphics[width=.45\textwidth]{multiple-paraboloids}
+        \includegraphics[width=.45\textwidth]{multiple-hyperboloids}
     \end{center}
 
-    Como encontrar a \alert{intersecção dos paraboloides}?
+    Como encontrar a \alert{intersecção dos hiperboloides}?
     \begin{itemize}
         \item Método \alert{Nonlinear Conjugate Gradient}
         \item Fórmula de \alert{Fletcher-Reeves}
