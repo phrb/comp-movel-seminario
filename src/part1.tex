@@ -1,9 +1,10 @@
 \section{Introdução}
 
+
 \begin{frame}
   \frametitle{\emph{Main Achievement} deste trabalho}
 
-    Monitorar a posição de qualquer objeto no espaço usando RF-ID.
+    Desenvolvimento de uma técnica para \alert{monitorar a posição de qualquer objeto no espaço usando RF-ID}.
 
     \begin{itemize}
       \item Com \alert{alta precisão} (erro de 3.5 cm)
@@ -22,43 +23,61 @@
 
 \begin{frame}
   \frametitle{Interação homem-máquina}
-  \begin{itemize}
-    \item  Controle/monitoração de braços robóticos
-  \end{itemize}
-
-  \begin{center}
+  \begin{figure}
     \includegraphics[width=.8\textwidth]{robot-arm}
-  \end{center}
-  %TODO
+		\caption*{Controle / monitoração de braços robóticos}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Interação homem-máquina}
-  \begin{itemize}
-    \item  Carros autônomos
-  \end{itemize}
-
-  \begin{center}
+  \begin{figure}
     \includegraphics[width=\textwidth]{autopilot}
-  \end{center}
+		\caption*{\emph{Environment-sensing} em carros autônomos}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Jogos / Realidade aumentada}
-  \begin{itemize}
-    \item  Kinect
-    \item  Wii
-  \end{itemize}
-  %TODO
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+					\begin{figure}
+							\includegraphics[width=\textwidth]{kinect-medium}
+						\captionsetup{labelformat=empty}
+						\caption{Kinect motion sensor}
+					\end{figure}
+
+        \column{.5\textwidth}
+					\begin{figure}
+							\includegraphics[width=0.5\textwidth]{wii-controller-more}
+						\captionsetup{labelformat=empty}
+						\caption{Controles Wii}
+					\end{figure}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Aplicações comerciais}
-  \begin{itemize}
-    \item  Amazon store
-    \item  Controle de estoque
-  \end{itemize}
-  %TODO
+    %\begin{columns}[T,onlytextwidth]
+        %\column{.5\textwidth}
+					\begin{figure}
+							\includegraphics[width=\textwidth]{amazon-robots}
+						\captionsetup{labelformat=empty}
+						\caption{Robôs de distribuição Amazon}
+					\end{figure}
+    %\end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aplicações comerciais}
+    %\begin{columns}[T,onlytextwidth]
+        %\column{.5\textwidth}
+					\begin{figure}
+							\includegraphics[width=\textwidth]{amazon-go-customer}
+						\captionsetup{labelformat=empty}
+						\caption{Amazon Go}
+					\end{figure}
+    %\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -82,7 +101,11 @@
     \item  Não funcionam em ambientes com obstáculos
   \end{itemize}
 
-  %TODO: Adicionar figura
+	\begin{figure}
+			\includegraphics[width=0.8\textwidth]{kinect-diagram}
+		\captionsetup{labelformat=empty}
+		\caption{Diagrama de um Kinect}
+	\end{figure}
 \end{frame}
 
 
@@ -91,9 +114,9 @@
 
   Vantagens
   \begin{itemize}
-    \item  Tags são muito baratas ($0.1 \sim 0.2$ dólares)!
-    \item  Técnica funciona mesmo com obstáculos
-    \item  Menor complexidade computacional!
+    \item  \alert{Tags são muito baratas} ($0.1 \sim 0.2$ dólares)!
+    \item  Técnica \alert{funciona mesmo com obstáculos}
+    \item  \alert{Menor complexidade computacional}!
   \end{itemize}
 
   Problemas do estado-da-arte que a técnica que apresentaremos supera
