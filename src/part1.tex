@@ -1,27 +1,44 @@
 \section{Introdução}
 
 \begin{frame}
-  \frametitle{\emph{Main Achievement} deste trabalho}
+    \frametitle{Sobre o Artigo}
+    \alert{Título:} 3D real-time indoor localization via broadband nonlinear backscatter in
+    passive devices with centimeter precision
 
-    Monitorar a posição de qualquer objeto no espaço usando RF-ID.
+    \alert{Autores:} Yunfei Ma, Xiaonan Hui Edwin C. Kan, da \alert{Cornell University}
+
+    \alert{Publicado em:} MobiCom '16 Proceedings of the 22nd Annual
+    International Conference on Mobile Computing and Networking Pages 216-229
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Contribuições Principais}
+
+    Monitorar a posição de etiquetas RFID no espaço 3D:
 
     \begin{itemize}
-      \item Com \alert{alta precisão} (erro de 3.5 cm)
+      \item Com \alert{alta precisão} (erro de $3.5$cm)
       \item Em \alert{tempo real}
-      \item Funciona mesmo em ambientes \alert{indoor}
+      \item Funciona em \alert{ambientes fechados e cheios de objetos}
+    \end{itemize}
+
+    Hardware \& software co-design:
+
+    \begin{itemize}
+        \item Combinação de frequências
+        \item Modificações no algoritmo HMFCW
+        \item Algoritmo de Localização 3D
+        \item Tag RFID não-linear
     \end{itemize}
 \end{frame}
 
-\section{E para que serve isso?}
+\subsection{Aplicações}
+
+\plain{Aplicações}
 
 \begin{frame}
-  \begin{center}
-    \Huge E para que serve isso?
-  \end{center}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Interação homem-máquina}
+  \frametitle{Interação Humano-Máquina}
   \begin{itemize}
     \item  Controle/monitoração de braços robóticos
   \end{itemize}
@@ -29,11 +46,10 @@
   \begin{center}
     \includegraphics[width=.8\textwidth]{robot-arm}
   \end{center}
-  %TODO
 \end{frame}
 
 \begin{frame}
-  \frametitle{Interação homem-máquina}
+  \frametitle{Interação Humano-Máquina}
   \begin{itemize}
     \item  Carros autônomos
   \end{itemize}
@@ -44,61 +60,60 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Jogos / Realidade aumentada}
+\frametitle{Jogos \& Realidade aumentada}
   \begin{itemize}
     \item  Kinect
     \item  Wii
   \end{itemize}
-  %TODO
 \end{frame}
 
 \begin{frame}
-  \frametitle{Aplicações comerciais}
+  \frametitle{Aplicações Comerciais}
   \begin{itemize}
     \item  Amazon store
     \item  Controle de estoque
   \end{itemize}
-  %TODO
 \end{frame}
 
 \begin{frame}
-  \frametitle{3D-Tracking hoje}
+  \frametitle{3D-Tracking Hoje}
 
-  Boa parte das técnicas de 3D-Tracking atuais são baseadas em visão computacional, com pequenas variações:
+  Boa parte das técnicas de 3D-Tracking atuais são baseadas em visão
+  computacional, com pequenas variações no:
+
   \begin{itemize}
-    \item no número de câmeras utilizadas
-    \item nos algoritmos de CV utilizados
-    \item etc
+    \item Aúmero de câmeras utilizadas
+    \item Algoritmos de CV utilizados
+    \item $\dots$
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{O problema já não está então resolvido?}
+  \frametitle{Limitações Atuais}
 
-  Limitações das soluções atuais
+  O problema já não está resolvido?
+
   \begin{itemize}
     \item  Alta complexidade computacional
     \item  Custo de implementação
     \item  Não funcionam em ambientes com obstáculos
   \end{itemize}
-
-  %TODO: Adicionar figura
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{3D-Tracking com RF-ID}
+  \frametitle{3D-Tracking usando RFIDs}
 
-  Vantagens
+  Vantagens:
   \begin{itemize}
     \item  Tags são muito baratas ($0.1 \sim 0.2$ dólares)!
     \item  Técnica funciona mesmo com obstáculos
     \item  Menor complexidade computacional!
   \end{itemize}
 
-  Problemas do estado-da-arte que a técnica que apresentaremos supera
+  Problemas do estado-da-arte que a técnica do artigo supera:
   \begin{itemize}
-    \item  Dependência de antenas de referência ou \emph{anchor nodes} 
+    \item  Dependência de antenas de referência ou \emph{anchor nodes}
     \item  Dependência de conhecimento prévio da trajetória
     \item  Limitação a 2D-Tracking
   \end{itemize}
