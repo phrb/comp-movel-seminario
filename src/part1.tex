@@ -1,5 +1,6 @@
 \section{Introdução}
 
+
 \begin{frame}
     \frametitle{Sobre o Artigo}
     \alert{Título:} 3D real-time indoor localization via broadband nonlinear backscatter in
@@ -60,19 +61,32 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Jogos \& Realidade aumentada}
-  \begin{itemize}
-    \item  Kinect
-    \item  Wii
-  \end{itemize}
+    \frametitle{Jogos \& Realidade aumentada}
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+        \begin{center}
+            \includegraphics[width=.9\textwidth]{kinect-medium}
+        \end{center}
+
+        \column{.5\textwidth}
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{wii-controller-more}
+        \end{center}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Aplicações Comerciais}
-  \begin{itemize}
-    \item  Amazon store
-    \item  Controle de estoque
-  \end{itemize}
+    \frametitle{Aplicações Comerciais}
+        \begin{center}
+            \includegraphics[width=.9\textwidth]{amazon-robots}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aplicações Comerciais}
+        \begin{center}
+            \includegraphics[width=.9\textwidth]{amazon-go-customer}
+        \end{center}
 \end{frame}
 
 \begin{frame}
@@ -89,32 +103,36 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Limitações Atuais}
+    \frametitle{Limitações Atuais}
 
-  O problema já não está resolvido?
+    O problema já não está resolvido?
 
-  \begin{itemize}
+    \begin{itemize}
     \item  Alta complexidade computacional
     \item  Custo de implementação
     \item  Não funcionam em ambientes com obstáculos
-  \end{itemize}
+    \end{itemize}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{kinect-diagram}
+    \end{center}
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{3D-Tracking usando RFIDs}
+    \frametitle{3D-Tracking usando RFIDs}
 
-  Vantagens:
-  \begin{itemize}
-    \item  Tags são muito baratas ($0.1 \sim 0.2$ dólares)!
-    \item  Técnica funciona mesmo com obstáculos
-    \item  Menor complexidade computacional!
-  \end{itemize}
+    Vantagens:
+    \begin{itemize}
+    \item  \alert{Tags são muito baratas} ($0.1 \sim 0.2$ dólares)!
+    \item  Técnica \alert{funciona mesmo com obstáculos}
+    \item  \alert{Menor complexidade computacional}!
+    \end{itemize}
 
-  Problemas do estado-da-arte que a técnica do artigo supera:
-  \begin{itemize}
+    Problemas do estado-da-arte que a técnica do artigo supera:
+    \begin{itemize}
     \item  Dependência de antenas de referência ou \emph{anchor nodes}
     \item  Dependência de conhecimento prévio da trajetória
     \item  Limitação a 2D-Tracking
-  \end{itemize}
+    \end{itemize}
 \end{frame}
